@@ -1,0 +1,11 @@
+ID,Title,Type,Priority,Preconditions,Steps,Expected Result,Status
+TC-001,Valid login,Functional,P0,App is running,"1. Enter user@example.com 2. Enter abc12345 3. Click Sign in","Message: 'Login successful (demo).'",Pass
+TC-002,Empty email,Negative,P0,App is running,"1. Leave email blank 2. Enter abc12345 3. Click Sign in","Error: 'Email is required.'",Pass
+TC-003,Invalid email format,Negative,P1,App is running,"1. Enter user@domain 2. Enter abc12345 3. Click Sign in","Error: 'Enter a valid email address.'",Fail
+TC-004,Weak password,Usability,P1,App is running,"1. Enter user@example.com 2. Enter abcdefgh 3. Click Sign in","Warning: 'Weak password: use 8+ characters with at least one number.'",Pass
+TC-005,Empty password,Negative,P0,App is running,"1. Enter user@example.com 2. Leave password blank 3. Click Sign in","Error: 'Password is required.'",Pass
+TC-006,Password with only numbers,Usability,P2,App is running,"1. Enter user@example.com 2. Enter 12345678 3. Click Sign in","Warning: 'Weak password: use 8+ characters with at least one number.'",Pass
+TC-007,Password with only letters,Usability,P2,App is running,"1. Enter user@example.com 2. Enter abcdefgh 3. Click Sign in","Warning: 'Weak password: use 8+ characters with at least one number.'",Pass
+TC-008,Remember me toggle,Functional,P2,App is running,"1. Enter user@example.com 2. Enter abc12345 3. Check 'Remember me' 4. Click Sign in","Message: 'Login successful (demo).' (Remember me state saved)",Pass
+TC-009,Forgot password link,Functional,P2,App is running,"1. Click 'Forgot password' link","Message: 'Forgot password flow is not implemented in this demo.'",Fail
+TC-010,Double-click Sign in,Negative,P2,App is running,"1. Enter user@example.com 2. Enter abc12345 3. Double-click Sign in quickly","Message appears once; no duplicate submissions",Pass

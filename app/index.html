@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>QA/UAT Demo Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Demo App — Login</h1>
+    <p class="sub">Use this page for QA/UAT scenarios (positive/negative cases).</p>
+
+    <form id="loginForm" novalidate>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="name@example.com" required />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="8+ chars, 1 number" required minlength="8" />
+
+      <div class="row">
+        <label class="checkbox">
+          <input id="remember" type="checkbox" />
+          <span>Remember me</span>
+        </label>
+        <a href="#" id="forgot">Forgot password?</a>
+      </div>
+
+      <button type="submit">Sign in</button>
+      <div id="msg" role="alert" aria-live="polite"></div>
+    </form>
+
+    <footer>Fernando's QA/UAT test suite</footer>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
