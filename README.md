@@ -21,15 +21,6 @@ This project demonstrates how to design test cases, execute scenarios, log defec
 
 ---
 
-## Project Structure
-Web-Application-Quality-Assurance-(QA)-and-User-Acceptance-Testing-(UAT)-Test-Suite/
-├─ tests/              # Test plan, cases, bug reports
-├─ screenshots/        # Evidence (optional)
-├─ benchmark.md        # Coverage and time tracking
-└─ README.md
-
----
-
 ## Project Instructions (3 Options)
 
 ### Option 1 — Run with VS Code Live Server (Recommended)
